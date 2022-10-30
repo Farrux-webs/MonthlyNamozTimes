@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #FFFFFF;
+  --main-data-title-color: #FFC700;
+  --main-title-after-bg: rgba(255, 255, 255, 0.5);
+  --card-bg: rgba(255, 255, 255, 0.2);
+  --bs-body-bg: url(../img/mainBg.png);
+  --card-top: rgb(158, 158, 158);
+}
+:root .active {
+  --main-color: rgb(23, 148, 119);
+  --main-data-title-color: #eb6512;
+  --main-title-after-bg: rgba(255, 255, 255, 0.6);
+  --card-bg: rgba(131, 182, 197, 0.473);
+  --bs-body-bg: rgba(161, 203, 208, 0.453);
+  --card-top: rgb(16, 118, 191);
+}
+
+body {
+  background-image: var(--bs-body-bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heading {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+  color: var(--main-color);
+  width: 80%;
+  margin: auto;
+  position: relative;
+  margin-bottom: 70px;
+  color: var(--main-color);
+}
+
+.heading::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  height: 3px;
+  background-color: var(--main-title-after-bg);
+}
+
+.regions {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.place {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: var(--main-color);
+}
+
+#regions {
+  border: 1px solid var(--main-color);
+  border-radius: 50px;
+  width: 199px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-align: center;
+}
+
+#getMonth {
+  width: 20%;
+  border-radius: 50px;
+}
+
+#readyToFind {
+  width: 20%;
+  border-radius: 50px;
+  font-size: 17px;
+  outline: solid 3px transparent;
+  border: none;
+}
+
+#readyToFind:focus {
+  background-color: transparent;
+  color: var(--main-color);
+  border: none;
+  outline: solid 3px rgba(3, 122, 161, 0.715);
+}
+
+.CurrentDatas {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mintaqa {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  color: var(--main-color);
+  display: flex;
+}
+
+.mintaqa span {
+  color: var(--main-data-title-color);
+  display: block;
+  margin-left: 20px;
+}
+
+.currentDate {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  color: var(--main-data-title-color);
+  display: flex;
+}
+
+.currentDate span {
+  color: var(--main-color);
+  display: block;
+  margin-left: 20px;
+}
+
+.mainWrapper {
+  margin-top: 82px;
+}
+
+.cardHeading {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+  margin: auto;
+  color: var(--main-data-title-color);
+}
+
+.card {
+  width: 200px;
+  padding: 20px 0;
+  background: var(--card-bg);
+  border-radius: 25px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.card img {
+  transition: inherit;
+  -webkit-transition: inherit;
+  -moz-transition: inherit;
+  -ms-transition: inherit;
+  -o-transition: inherit;
+}
+
+.card:hover img {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+
+.actualDate {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 69px;
+  display: block;
+  margin: auto;
+  color: var(--main-color);
+}
+
+#weekday {
+  border-radius: 25px;
+  margin-bottom: 24px;
+  color: var(--main-color);
+  background-color: var(--card-top);
+}
+
+.weekly {
+  margin-top: 50px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 69px;
+}
+
+.darkmode {
+  position: absolute;
+  font-size: 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 0;
+  padding: 5px 15px;
+  margin: 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  right: 5%;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.lightmode {
+  position: absolute;
+  font-size: 50px;
+  background-color: #000;
+  text-align: center;
+  padding: 0;
+  padding: 5px 15px;
+  margin: 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  right: 5%;
+  color: #FFFFFF;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}/*# sourceMappingURL=main.css.map */
